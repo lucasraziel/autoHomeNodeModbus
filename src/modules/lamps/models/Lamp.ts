@@ -1,7 +1,7 @@
 export default class Lamp {
   address: number;
 
-  status: boolean;
+  state?: boolean;
 
   name: string;
 }

@@ -3,7 +3,7 @@
       "name": "Corredor",
       "lamps": [{
           "address":1280,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada do Corredor"
       }]
   },
@@ -11,12 +11,12 @@
       "name": "Sala de TV",
       "lamps": [{
           "address":1281,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada da sala"
       },
       {
           "address":1295,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada secundária da sala"
       }]
   },
@@ -25,12 +25,12 @@
       "name": "Sala Jantar",
       "lamps": [{
           "address":1288,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada da sala de jantar"
       },
       {
           "address":1293,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada secundária da sala de jantar"
       }]
   },
@@ -39,12 +39,12 @@
       "name": "Cozinha",
       "lamps": [{
           "address":1282,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada da cozinha"
       },
       {
           "address":1297,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada secundária da cozinha"
       }]
   },
@@ -53,7 +53,7 @@
       "name": "Área de Serviço",
       "lamps": [{
           "address":1289,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada da área de serviço"
       }]
   },
@@ -62,7 +62,7 @@
       "name": "Varanda",
       "lamps": [{
           "address":1290,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada da varanda"
       }]
   },
@@ -71,7 +71,7 @@
       "name": "Quarto de hóspede",
       "lamps": [{
           "address":1291,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada do quarto do hóspede"
       }]
   },
@@ -80,7 +80,7 @@
       "name": "Quarto das crianças",
       "lamps": [{
           "address":1292,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada do quarto das crianças"
       }]
   },
@@ -89,7 +89,7 @@
       "name": "Quarto do casal",
       "lamps": [{
           "address":1300,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada do quarto de casal"
       }]
   },
@@ -98,7 +98,7 @@
       "name": "Closet",
       "lamps": [{
               "address":1294,
-              "status" : false,
+              "state" : false,
               "name":"Lâmpada do closet"
       }]
   },
@@ -107,7 +107,7 @@
       "name": "Banheiro da suíte",
       "lamps": [{
           "address":1285,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada do banheiro da suíte"
       }]
   },
@@ -116,7 +116,7 @@
       "name": "Banheiro social",
       "lamps": [{
           "address":1296,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada do banheiro social"
       }]
   },
@@ -125,7 +125,7 @@
       "name": "Home office",
       "lamps": [{
           "address":1299,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada do home office"
       }]
   },
@@ -134,7 +134,7 @@
       "name": "Área de ventilação",
       "lamps": [{
           "address":1295,
-          "status" : false,
+          "state" : false,
           "name":"Lâmpada da área de ventilação"
       }]
   }

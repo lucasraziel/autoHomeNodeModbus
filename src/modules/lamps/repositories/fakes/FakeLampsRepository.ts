@@ -9,12 +9,12 @@ const data: Room[] = [
       {
         address: 1,
         name: 'principal',
-        status: true,
+        state: true,
       },
       {
         address: 2,
         name: 'auxiliar',
-        status: true,
+        state: true,
       },
     ],
   },
@@ -24,12 +24,12 @@ const data: Room[] = [
       {
         address: 3,
         name: 'principal',
-        status: true,
+        state: true,
       },
       {
         address: 4,
         name: 'auxiliar',
-        status: true,
+        state: true,
       },
     ],
   },

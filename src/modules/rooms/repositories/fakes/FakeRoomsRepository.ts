@@ -4,7 +4,16 @@ import Room from '@modules/rooms/models/Room';
 const data: Room[] = [
   {
     name: 'Sala',
-    lamps: [],
+    lamps: [
+      {
+        address: 1280,
+        name: 'Principal',
+      },
+      {
+        address: 1290,
+        name: 'Auxiliar',
+      },
+    ],
   },
 ];
 

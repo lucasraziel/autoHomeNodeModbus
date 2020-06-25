@@ -1,7 +1,5 @@
-import app from './server'
+import app from './server';
 
-
-app.listen(3333, ()=>{
-  console.log('server started')
-})
-
+app.listen(3333, () => {
+  console.log('server started');
+});

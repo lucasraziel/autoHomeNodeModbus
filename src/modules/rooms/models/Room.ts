@@ -1,4 +1,7 @@
-export default class Room  {
+import Lamp from '@modules/lamps/models/Lamp';
+
+export default class Room {
   name: string;
-  lamps: object[];
+
+  lamps: Lamp[];
 }

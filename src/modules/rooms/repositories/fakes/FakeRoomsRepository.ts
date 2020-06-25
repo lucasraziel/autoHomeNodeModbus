@@ -1,20 +1,19 @@
 import IRoomsRepository from '@modules/rooms/repositories/IRoomsRepository';
 import Room from '@modules/rooms/models/Room';
 
-import data from '@shared/infra/json/data.json';
+const data: Room[] = [
+  {
+    name: 'Sala',
+    lamps: [],
+  },
+];
 
 export default class RoomsRepository implements IRoomsRepository {
-  private rooms: Room[];
-
-  constructor() {
-    this.rooms = data as Room[];
-  }
-
   public async list(): Promise<Room[]> {
-    return this.rooms;
+    return data as Room[];
   }
 
   public async get(name: string): Promise<Room | undefined> {
-    return this.rooms.find((room) => room.name === name);
+    return (data as Room[]).find((room) => room.name === name);
   }
 }

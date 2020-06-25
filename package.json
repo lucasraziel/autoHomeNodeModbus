@@ -1,5 +1,5 @@
 {
-  "name": "AutoHomeNodeModubs",
+  "name": "auto-home-node-modubs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "modbus-serial": "^8.0.0",
+    "reflect-metadata": "^0.1.13",
     "tsyringe": "^4.3.0"
   },
   "devDependencies": {
@@ -25,7 +26,7 @@
     "@types/jest": "^26.0.0",
     "@typescript-eslint/eslint-plugin": "^3.4.0",
     "@typescript-eslint/parser": "^3.4.0",
-    "eslint": "^7.3.0",
+    "eslint": "7.2.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-typescript": "^2.0.0",
@@ -33,7 +34,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
-    "reflect-metadata": "^0.1.13",
     "ts-jest": "^26.1.1",
     "ts-node-dev": "^1.0.0-pre.49",
     "tsconfig-paths": "^3.9.0",

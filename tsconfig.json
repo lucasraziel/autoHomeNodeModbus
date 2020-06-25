@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "lib": ["es2020", "es2019"],
     "module": "commonjs",
     "resolveJsonModule": true,
     "allowJs": true,
@@ -18,5 +19,5 @@
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["jest.config.js", "prettier.config.js"]
+  "exclude": ["jest.config.js", "prettier.config.js", ".eslintrc.json", ".eslintrc.js"]
 }

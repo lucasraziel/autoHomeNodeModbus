@@ -8,11 +8,13 @@ const lampsRouter = Router();
 const lampControler = new LampController();
 
 lampsRouter.patch(
-  '/',
+  '/:address',
   celebrate({
     [Segments.BODY]: {
-      address: Joi.number().required(),
       state: Joi.boolean().required(),
+    },
+    [Segments.PARAMS]: {
+      address: Joi.number().required(),
     },
   }),
   lampControler.change

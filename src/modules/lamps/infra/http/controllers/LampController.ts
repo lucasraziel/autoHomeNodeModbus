@@ -4,7 +4,10 @@ import SwitchLampService from '@modules/lamps/services/SwitchLampService';
 
 export default class LampController {
   public async change(request: Request, response: Response): Promise<Response> {
-    const { address, state } = request.body;
+    const { addressText } = request.params;
+    const { state } = request.body;
+
+    const address = Number(addressText);
 
     const switchLampService = container.resolve(SwitchLampService);
 

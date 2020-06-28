@@ -12,7 +12,7 @@
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "start": "ts-node src/shared/infra/http/index.ts",
     "test": "jest",
-    "run-build": "node dist/shared/infra/http/index.js"
+    "run-build": "nohup node dist/shared/infra/http/index.js"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.1",

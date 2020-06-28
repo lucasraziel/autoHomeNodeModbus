@@ -14,7 +14,6 @@ export default class LampRepositories implements ILampsRepository {
   public async getLamp(address: number): Promise<Lamp | undefined> {
     const roomFilterLamps = this.rooms.map((room) => room.lamps);
     const lamps = flat(roomFilterLamps);
-    console.log(lamps);
     return lamps.find((lamp) => lamp.address === address);
   }
 

@@ -1,3 +1,4 @@
+import flat from 'array.prototype.flat';
 import Room from '@modules/rooms/models/Room';
 import Lamp from '../../models/Lamp';
 import ILampsRepository from '../ILampsRepository';
@@ -43,9 +44,10 @@ export default class LampRepositories implements ILampsRepository {
   }
 
   public async getLamp(address: number): Promise<Lamp | undefined> {
-    return this.rooms
-      .flatMap((room) => room.lamps)
-      .find((lamp) => lamp.address === address);
+    const roomFilterLamps = this.rooms.map((room) => room.lamps);
+    const lamps = flat(roomFilterLamps);
+
+    return lamps.find((lamp) => lamp.address === address);
   }
 
   public async getLamps(roomName: string): Promise<Lamp[]> {

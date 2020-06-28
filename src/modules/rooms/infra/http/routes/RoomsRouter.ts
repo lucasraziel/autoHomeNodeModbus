@@ -22,17 +22,15 @@ roomsRouter.get('/', roomController.index);
 
 roomsRouter.patch(
   '/:name',
-  celebrate(
-    {
-      [Segments.PARAMS]: {
-        name: Joi.string().required(),
-      },
-      [Segments.BODY]: {
-        state: Joi.boolean().required(),
-      },
+  celebrate({
+    [Segments.PARAMS]: {
+      name: Joi.string().required(),
     },
-    roomController.change
-  )
+    [Segments.BODY]: {
+      state: Joi.boolean().required(),
+    },
+  }),
+  roomController.change
 );
 
 export default roomsRouter;

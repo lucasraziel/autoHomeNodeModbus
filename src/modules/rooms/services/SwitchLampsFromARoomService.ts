@@ -1,3 +1,5 @@
+/* eslint-disable no-await-in-loop */
+/* eslint-disable no-plusplus */
 import { inject, injectable } from 'tsyringe';
 import IRoomsRepository from '@modules/rooms/repositories/IRoomsRepository';
 import IModbusProvider from '@shared/container/providers/ModbusProvider/models/IModbusProvider';
@@ -23,9 +25,11 @@ export default class ListRoomsService {
     if (!room) {
       throw new AppError('This room does not exist');
     }
-
-    room.lamps.forEach(async (lamp) => {
-      await this.modbusProvider.switchCoil({ address: lamp.address, state });
-    });
+    for (let i = 0; i < room.lamps.length; i++) {
+      await this.modbusProvider.switchCoil({
+        address: room.lamps[i].address,
+        state,
+      });
+    }
   }
 }

@@ -8,32 +8,19 @@
       }]
   },
   {
-      "name": "Sala de TV",
+      "name": "Sala",
       "lamps": [{
           "address":1281,
           "state" : false,
           "name":"Lâmpada da sala"
       },
       {
-          "address":1295,
-          "state" : false,
-          "name":"Lâmpada secundária da sala"
-      }]
+        "address":1288,
+        "state" : false,
+        "name":"Lâmpada da sala de jantar"
+    }]
   },
 
-  {
-      "name": "Sala Jantar",
-      "lamps": [{
-          "address":1288,
-          "state" : false,
-          "name":"Lâmpada da sala de jantar"
-      },
-      {
-          "address":1293,
-          "state" : false,
-          "name":"Lâmpada secundária da sala de jantar"
-      }]
-  },
 
   {
       "name": "Cozinha",
@@ -70,7 +57,7 @@
   {
       "name": "Quarto de hóspede",
       "lamps": [{
-          "address":1291,
+          "address":1301,
           "state" : false,
           "name":"Lâmpada do quarto do hóspede"
       }]
@@ -91,17 +78,14 @@
           "address":1300,
           "state" : false,
           "name":"Lâmpada do quarto de casal"
+      },
+      {
+        "address":1294,
+        "state" : false,
+        "name":"Lâmpada do closet"
       }]
   },
 
-  {
-      "name": "Closet",
-      "lamps": [{
-              "address":1294,
-              "state" : false,
-              "name":"Lâmpada do closet"
-      }]
-  },
 
   {
       "name": "Banheiro da suíte",

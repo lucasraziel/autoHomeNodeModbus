@@ -1,8 +1,8 @@
 import flat from 'array.prototype.flat';
 import Room from '@modules/rooms/models/Room';
 import data from '@shared/infra/json/data.json';
-import Lamp from '../../models/Lamp';
-import ILampsRepository from '../../repositories/ILampsRepository';
+import Lamp from '../../../models/Lamp';
+import ILampsRepository from '../../../repositories/ILampsRepository';
 
 export default class LampRepositories implements ILampsRepository {
   private rooms: Room[];

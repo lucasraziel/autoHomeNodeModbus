@@ -10,7 +10,7 @@ export default class ListRoomsService {
   constructor(
     @inject('RoomsRepository')
     private roomsRepository: IRoomsRepository,
-    @inject('ModBusProvider')
+    @inject('ModbusProvider')
     private modbusProvider: IModbusProvider
   ) {}
 

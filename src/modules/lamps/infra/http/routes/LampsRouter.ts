@@ -20,4 +20,14 @@ lampsRouter.patch(
   lampControler.change
 );
 
+lampsRouter.get(
+  '/:address',
+  celebrate({
+    [Segments.PARAMS]: {
+      address: Joi.number().required(),
+    },
+  }),
+  lampControler.show
+);
+
 export default lampsRouter;
